@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: b8cbf6ce-494f-4bab-acab-c5ba2a0f7dc5
+  bundle: undefined
+  default_langcode: en-gb
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: ahmed-yaaniu-RDnYlufMFAw-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-01/ahmed-yaaniu-RDnYlufMFAw-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 798791
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1736362998
+  path:
+    -
+      alias: ''
+      langcode: en-gb
+      pathauto: 0
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Inoxa'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/empty-front-page'

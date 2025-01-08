@@ -1,0 +1,29 @@
+uuid: a183bbb4-597c-41ad-9c71-29d4c4e5cd78
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.realty
+    - taxonomy.vocabulary.location
+id: node.realty.field_location
+field_name: field_location
+entity_type: node
+bundle: realty
+label: Location
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      location: location
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

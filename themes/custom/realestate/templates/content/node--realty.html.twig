@@ -1,0 +1,153 @@
+{{ attach_library('realestate/realty') }}
+{% if node.field_photos.getvalue | length < 2 %}
+  <div class="row g-2 card-grid mb-4">
+    <div class="col-md-12">
+      <div class="card">
+        {% set image_0_url = file_url(content.field_photos[0]['#item'].entity.uri.value|image_style('property_big')) %}
+        <img src="{{ image_0_url }}">
+      </div>
+    </div>
+  </div>
+{% else %}
+  <div class="row g-2 card-grid mb-4">
+    {% for key, item in node.field_photos.getvalue %}
+      {% if key == 0 %}
+        {% set image_big = file_url(content.field_photos[loop.index0]['#item'].entity.uri.value) %}
+        {% set image_url = file_url(content.field_photos[loop.index0]['#item'].entity.uri.value|image_style('property_small')) %}
+        <div class="col-md-6" data-key="{{ key }}">
+          <a data-glightbox data-gallery="gallery" href="{{ image_big }}">
+            <div class="card">
+              <img src="{{ image_url }}">
+            </div>
+          </a>
+        </div>
+      {% elseif key < 4 %}
+        {% if key == 1 %}
+        <div class="col-md-6">
+          <div class="row g-2">
+        {% endif %}
+        {% set image_big = file_url(content.field_photos[loop.index0]['#item'].entity.uri.value) %}
+        {% set image_url = file_url(content.field_photos[loop.index0]['#item'].entity.uri.value|image_style('property_small')) %}
+        <div class="col-md-6" data-key="{{ key }}">
+          <a data-glightbox data-gallery="gallery" href="{{ image_big }}">
+            <div class="card card-grid-sm">
+              <img src="{{ image_url }}">
+            </div>
+          </a>
+        </div>
+      {% elseif key == 4 %}
+        {% set image_url = file_url(content.field_photos[loop.index0]['#item'].entity.uri.value|image_style('property_small')) %}
+        <div class="col-md-6" data-key="{{ key }}">
+          <div class="card card-grid-sm">
+            <div class="bg-overlay bg-dark opacity-7"></div>
+            <img src="{{ image_url }}">
+            {% for photo in node.field_photos.getvalue %}
+              {% set image_big = file_url(content.field_photos[loop.index0]['#item'].entity.uri.value) %}
+              <a data-glightbox="" data-gallery="gallery" href="{{ image_big }}" {% if loop.index0 == 0 %}class="stretched-link z-index-9"{% endif %}></a>
+            {% endfor %}
+            <div class="card-img-overlay d-flex h-100 w-100">
+              <h6 class="card-title m-auto fw-light text-decoration-underline">
+                <a href="#" class="btn btn-secondary text-white">{{ 'View all'|t }}</a>
+              </h6>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+  </div>
+{% endif %}
+<div class="row g-4 g-xl-5" data-sticky-container>
+	<div class="col-xl-7 order-1">
+		<div class="vstack gap-5">
+			<div class="card bg-transparent border-0">
+				<div class="card-header border-bottom bg-transparent px-0 pt-0">
+					<h3 class="mb-0 fs-4">{{ 'About property'|t }}</h3>
+				</div>
+				<div class="card-body pt-4 p-0">
+					{{ content.body }}
+          <div class="align-items-center mt-3 share-cart">
+            <h6 class="d-inline-block mb-2 me-4">{{ 'Share on'|t }}:</h6>
+            <ul class="list-inline hstack flex-wrap gap-3 h6 fw-normal mb-0">
+              <li class="list-inline-item"> <a class="text-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}" target="_blank">Facebook</a> </li>
+              <li class="list-inline-item"> <a class="text-twitter" href="https://twitter.com/intent/tweet?text={{ url('<current>') }}" target="_blank">Twitter</a> </li>
+            </ul>
+          </div>
+				</div>
+			</div>
+			{% if node.field_key_features | length %}
+			<div class="card bg-transparent border-0">
+				<div class="card-header border-bottom bg-transparent px-0 pt-0">
+					<h3 class="card-title mb-0 fs-4">{{ 'Key features'|t }}</h3>
+				</div>
+				<div class="card-body pt-2 p-0">
+					<div class="row g-4 mt-0">
+            {% for key, item in node.field_key_features %}
+              <div class="col-sm-6 mb-1">
+                <h6>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  {{ item.entity.name.value }}.
+                  <span class="text-secondary">
+                    {{ item.entity.description.value|raw|striptags|trim }}
+                  </span>
+                </h6>
+              </div>
+            {% endfor %}
+					</div>
+				</div>
+			</div>
+			{% endif %}
+      <div class="card bg-transparent location-cart border-0">
+        <div class="card-header border-bottom bg-transparent px-0 pt-0">
+          <h3 class="mb-0 fs-4">{{ 'Location'|t }} ({{ node.field_location.entity.name.value }})</h3>
+        </div>
+        <div class="card-body pt-4 p-0">
+          {#<iframe class="w-100 mb-2" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076684379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sin!4v1586000412513!5m2!1sen!2sin"  style="border:0;" aria-hidden="false" tabindex="0"></iframe>#}
+          {# {{ drupal_view('node_map', 'block_1') }} #}
+          {{ drupal_block('rental_map_block') }}
+          <div class="mt-3">
+            {{ node.field_location.entity.description.value|raw }}
+          </div>
+        </div>
+      </div>
+		</div>
+	</div>
+	<aside class="col-xl-5 order-xl-2">
+		<div data-sticky data-margin-top="100" data-sticky-for="1199">
+			<div class="card card-body border">
+        {% set field_type = node.field_type.target_id %}
+				<div class="d-sm-flex justify-content-sm-between align-items-center mb-3">
+					<div>
+            {% if node.field_type.0.entity.label == 'Properties to rent'|t %}
+            <span>{{ 'Price per month'|t }}</span>
+            {% else %}
+						<span>{{ 'Price'|t }}</span>
+            {% endif %}
+						<h4 class="card-title mb-0">{{ content.field_price_per_month.0 }}</h4>
+            <small>{{ 'without taxes & fees'|t }}</small>
+					</div>
+					<div>
+            {% if node.field_bedroom.0.value %}
+						      <h6 class="fw-normal mb-0">{{ 'Bedrooms'|t }}: {{ node.field_bedroom.0.value }}</h6>
+            {% endif %}
+            {% if node.field_bathroom.0.value %}
+              <h6 class="fw-normal mb-0">{{ 'Bathrooms'|t }}: {{ node.field_bathroom.0.value }}</h6>
+            {% endif %}
+            {% if node.field_build_size.0.value %}
+              <h6 class="fw-normal mb-0">{{ 'Build size'|t }}: {{ node.field_build_size.0.value }}m²</h6>
+            {% endif %}
+            {% if node.field_plot_size.0.value %}
+              <h6 class="fw-normal mb-0">{{ 'Plot size'|t }}: {{ node.field_plot_size.0.value }}m²</h6>
+            {% endif %}
+					</div>
+				</div>
+        <div class="booking-zone">
+  				<p class="h6 fw-light mb-2">{{ 'Please leave your phone number with country code, and we will get right back to you or'|t }} <a href="whatsapp://send?phone=yourphone&text={{ url('<current>') }}" target="_blank">{{ 'click to chat via WhatsApp'|t }}</a>.</p>
+          {{ drupal_form('Drupal\\rental\\Form\\RentalBooking') }}
+        </div>
+			</div>
+      {{ drupal_view('like_these_too', 'block_1', node.field_location.entity.tid.value) }}
+		</div>
+	</aside>
+</div>

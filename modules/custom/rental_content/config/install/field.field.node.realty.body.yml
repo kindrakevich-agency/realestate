@@ -1,0 +1,26 @@
+uuid: 20671f17-45c7-4fd3-b45f-6b78d539a155
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.full_html
+    - node.type.realty
+  module:
+    - text
+id: node.realty.body
+field_name: body
+entity_type: node
+bundle: realty
+label: 'About Realty'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - full_html
+field_type: text_with_summary

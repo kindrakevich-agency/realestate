@@ -1,0 +1,9 @@
+rental.choices:
+  js:
+    js/choices.js: {}
+
+rental.map:
+  js:
+    js/map.js: {}
+  dependencies:
+    - core/drupalSettings

@@ -1,0 +1,26 @@
+uuid: cbb57a14-3b7c-40e6-8201-3818b3251de1
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - realestate
+_core:
+  default_config_hash: bZEIokGa66t4DqCSYLO536_sH001P-VZifOn08JIFfQ
+id: realestate_content
+theme: realestate
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Theme override to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ */
+#}
+
+<div class="col-md-6">
+  <div class="card card-body h-100 p-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <!-- Image and text -->
+      <div class="d-flex align-items-center">
+        <img src="{{ fields.field_photos.content|striptags|trim }}" class="h-70px rounded-2" alt="">
+
+        <div class="ms-3">
+          <h5 class="mb-0">{{ fields.name.content }}</h5>
+          <span>{{ fields.nid.content }} {{ 'Listing'|t }}</span>
+        </div>
+      </div>
+      <a href="{{ fields.view_taxonomy_term.content|striptags|trim }}" class="btn btn-primary-soft btn-round flex-shrink-0 ms-2 mb-0"><i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</div>

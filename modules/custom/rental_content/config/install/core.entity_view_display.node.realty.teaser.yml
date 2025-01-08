@@ -1,0 +1,97 @@
+uuid: 08f48381-e5d7-478f-a210-4b35eead66cd
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.realty.body
+    - field.field.node.realty.field_address
+    - field.field.node.realty.field_approximate_location
+    - field.field.node.realty.field_bathroom
+    - field.field.node.realty.field_bedroom
+    - field.field.node.realty.field_build_size
+    - field.field.node.realty.field_key_features
+    - field.field.node.realty.field_location
+    - field.field.node.realty.field_photos
+    - field.field.node.realty.field_plot_size
+    - field.field.node.realty.field_price_per_month
+    - field.field.node.realty.field_property_type
+    - field.field.node.realty.field_type
+    - image.style.card
+    - node.type.realty
+  module:
+    - svg_image
+    - user
+id: node.realty.teaser
+targetEntityType: node
+bundle: realty
+mode: teaser
+content:
+  field_bathroom:
+    type: number_unformatted
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_bedroom:
+    type: number_unformatted
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_key_features:
+    type: entity_reference_label
+    label: visually_hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_photos:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: card
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_price_per_month:
+    type: number_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_address: true
+  field_approximate_location: true
+  field_build_size: true
+  field_location: true
+  field_plot_size: true
+  field_property_type: true
+  flag_bookmark: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,37 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 28563002-abe7-4238-96ee-262a40d15fc3
+  bundle: key_features
+  default_langcode: en-gb
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Close to shops'
+  description:
+    -
+      value: '<p>Close to shops, bars, restaurants, supermarkets, etc.</p>'
+      format: full_html
+  weight:
+    -
+      value: 6
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /close-shops
+      langcode: en-gb
+      pathauto: 1

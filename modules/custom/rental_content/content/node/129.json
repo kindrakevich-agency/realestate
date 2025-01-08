@@ -1,0 +1,50 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 6f3f661d-95cc-42fe-8337-ea51bbc58240
+  bundle: article
+  default_langcode: en-gb
+  depends:
+    b8cbf6ce-494f-4bab-acab-c5ba2a0f7dc5: file
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Lorem ipsum dolor sit amet'
+  created:
+    -
+      value: 1736362950
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /lorem-ipsum-dolor-sit-amet
+      langcode: en-gb
+      pathauto: 1
+  body:
+    -
+      value: '<p class="text-align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur neque massa, congue vel sollicitudin vitae, luctus et nibh. Aenean in arcu tortor. Praesent egestas turpis nec vehicula molestie. Donec lacinia ornare posuere. Sed ultrices id sem sit amet rutrum. Praesent molestie orci vitae ullamcorper volutpat. Maecenas nec augue odio. Vestibulum vehicula diam eu nibh sagittis commodo. Praesent commodo in libero vitae eleifend. Sed ut lobortis tellus, sit amet gravida eros. Nunc egestas tristique arcu in placerat. Phasellus vel vulputate magna, in lacinia nisl. Fusce eu ante pulvinar, luctus sapien ac, maximus tortor. Praesent at quam mollis, consectetur tellus nec, sodales libero.</p><p class="text-align-justify">Sed facilisis tempus orci, auctor gravida nunc porttitor sed. Praesent sed odio at dui ullamcorper molestie. Cras accumsan malesuada justo id hendrerit. Nullam sollicitudin aliquet nunc in tempus. Suspendisse lobortis suscipit metus, quis sodales quam tincidunt sed. Morbi accumsan dictum nibh, vel aliquet orci feugiat vehicula. Morbi vel metus dictum, accumsan diam nec, rutrum diam. Fusce maximus ullamcorper ante. Donec quis dignissim nunc. Etiam luctus dictum enim at efficitur. Praesent sit amet augue tellus. Aliquam imperdiet pellentesque semper. Fusce sit amet enim ligula.</p><p class="text-align-justify">Phasellus ultricies molestie dignissim. Nunc luctus tortor ipsum, blandit scelerisque quam dictum nec. Nam maximus sollicitudin urna commodo tincidunt. Morbi id euismod augue. Nunc sodales nulla sit amet urna eleifend, sed interdum nibh molestie. Suspendisse nisi diam, mollis sit amet convallis at, pretium ac justo. Praesent id mi a odio consequat ornare id et lectus. Fusce eu turpis in odio bibendum facilisis sit amet in purus. Etiam luctus lacus aliquam, fermentum ipsum id, maximus arcu. Phasellus id mauris purus. Nulla sollicitudin, libero ut luctus finibus, arcu leo egestas nunc, non ornare nibh dui vehicula elit. Quisque convallis est lectus, id faucibus nulla vulputate sed.</p><p class="text-align-justify">Maecenas tempus malesuada fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec semper sapien ut turpis sagittis commodo at ac ante. Aliquam varius sem ac lorem cursus, non ultrices massa varius. Mauris nisl justo, lacinia a ligula ut, cursus aliquet metus. Integer blandit finibus ex ac vestibulum. Suspendisse consequat, metus eu commodo consectetur, dolor augue hendrerit metus, in egestas felis dolor eu neque. Donec tristique libero non dolor euismod lacinia. Integer commodo efficitur lectus vitae accumsan. Quisque sit amet est sed mi sollicitudin sagittis vitae mollis nisi.</p><p class="text-align-justify">Suspendisse potenti. Nullam quis auctor sem. Curabitur faucibus venenatis turpis quis tristique. Etiam fringilla cursus nisi id aliquam. Fusce blandit quis lacus in posuere. Mauris viverra aliquet erat non placerat. Morbi mauris eros, fringilla ut arcu ac, pellentesque dignissim sapien.</p>'
+      format: full_html
+      summary: ''
+  field_image:
+    -
+      entity: b8cbf6ce-494f-4bab-acab-c5ba2a0f7dc5
+      alt: 'Lorem ipsum dolor sit amet'
+      title: ''
+      width: 1920
+      height: 1280

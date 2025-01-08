@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 41fc0202-d58a-4488-9fe9-973bfd141ca2
+  bundle: type
+  default_langcode: en-gb
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Properties to rent'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /rent
+      langcode: en-gb
+      pathauto: 0

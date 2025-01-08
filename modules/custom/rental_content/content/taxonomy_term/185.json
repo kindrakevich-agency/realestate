@@ -1,0 +1,33 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 4c4112d4-6391-4460-a190-9ed4961a2c98
+  bundle: property_type
+  default_langcode: en-gb
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Town house'
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /town-house
+      langcode: en-gb
+      pathauto: 1

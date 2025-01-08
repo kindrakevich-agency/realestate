@@ -1,0 +1,20 @@
+uuid: 6d7c755a-92a9-4e2e-98c9-fe0821977545
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - rental
+  theme:
+    - realestate
+id: realestate_phoneblockform_2
+theme: realestate
+region: content
+weight: -5
+provider: null
+plugin: rental_phone_block
+settings:
+  id: rental_phone_block
+  label: 'Phone block form'
+  label_display: '0'
+  provider: rental
+visibility: {  }

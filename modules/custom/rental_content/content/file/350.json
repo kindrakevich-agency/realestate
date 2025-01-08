@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 334c6a8c-66b6-4ab8-a744-7e2b5b9d1c26
+  bundle: undefined
+  default_langcode: en-gb
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: villa-7_0.jpg
+  uri:
+    -
+      value: 'public://2025-01/villa-7_0.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 616005
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1736367996
+  path:
+    -
+      alias: ''
+      langcode: en-gb
+      pathauto: 0
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Inoxa'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/empty-front-page'

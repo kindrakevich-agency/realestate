@@ -1,0 +1,54 @@
+{
+    "name": "kindrakevich/realestate",
+    "description": "Realestate installation profile for Drupal 10.",
+    "type": "drupal-profile",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "asset": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "drupal/address": "^2.0",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/core": "^10.0",
+        "drupal/default_content": "^2.0@alpha",
+        "drupal/empty_front_page": "^1.1",
+        "drupal/field_group": "^3.4",
+        "drupal/file_entity": "^2.1",
+        "drupal/geolocation": "^3.12",
+        "drupal/pathauto": "^1.12",
+        "drupal/svg_image": "^3.0",
+        "drupal/themable_forms": "^1.0",
+        "drupal/twig_tweak": "^3.2",
+        "drupal/wpf": "^1.1"
+    },
+    "replace": {
+        "bower-asset/desandro-matches-selector": "*",
+        "bower-asset/ev-emitter": "*",
+        "bower-asset/fizzy-ui-utils": "*",
+        "bower-asset/get-size": "*",
+        "bower-asset/jquery": "*",
+        "bower-asset/outlayer": "*"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}

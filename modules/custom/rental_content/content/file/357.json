@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 5f42fe23-2d27-4238-aee7-7b8d2465beae
+  bundle: undefined
+  default_langcode: en-gb
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: villa-1_3.jpg
+  uri:
+    -
+      value: 'public://2025-01/villa-1_3.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 403329
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1736368279
+  path:
+    -
+      alias: ''
+      langcode: en-gb
+      pathauto: 0
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Inoxa'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/empty-front-page'

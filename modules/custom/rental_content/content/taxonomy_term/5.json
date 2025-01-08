@@ -1,0 +1,37 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 153ac3b0-8a08-4f32-9d09-dfc5fb11a2b5
+  bundle: key_features
+  default_langcode: en-gb
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Pool
+  description:
+    -
+      value: '<p>Heated Outdoor Pool, Has A Pool</p>'
+      format: basic_html
+  weight:
+    -
+      value: 8
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /pool
+      langcode: en-gb
+      pathauto: 1

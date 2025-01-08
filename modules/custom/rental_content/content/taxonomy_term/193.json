@@ -1,0 +1,37 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 92e2f5d6-7805-4252-93c3-00a051435f12
+  bundle: key_features
+  default_langcode: en-gb
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Near beach'
+  description:
+    -
+      value: '<p>Сlose to beach property, sea view, seafront / beachfront</p>'
+      format: full_html
+  weight:
+    -
+      value: 4
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /near-beach
+      langcode: en-gb
+      pathauto: 1

@@ -1,0 +1,37 @@
+<div class="row g-4">
+  <div class="col-12">
+    {% set image = node.field_image|file_uri %}
+    <img src="{{ image|image_style('header') }}" class="rounded-3" alt="{{ drupal_title() }}" width="100%">
+  </div>
+  <div class="col-11 col-lg-10 mx-auto position-relative mt-n5 mt-sm-n7 mt-md-n8">
+    <div class="bg-mode shadow rounded-3 p-4">
+      <div class="badge text-bg-success mb-2">Realty Blog</div>
+      <h1 class="fs-3">{{ drupal_title() }}</h1>
+      {{ node_teaser }}
+      <ul class="nav nav-divider align-items-center mt-2">
+        <li class="nav-item">Rental Team,</li>
+        <li class="nav-item ms-2">{{ node.created.value|date('M, d Y') }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="row mb-5 mt-3">
+  <div class="col-lg-10 mx-auto">
+    {{ content.body }}
+    <div class="d-lg-flex justify-content-lg-between mt-4">
+      <div class="align-items-center mb-3 mb-lg-0">
+        <h6 class="d-inline-block mb-2 me-4">Share on:</h6>
+        <ul class="list-inline hstack flex-wrap gap-3 h6 fw-normal mb-0">
+          <li class="list-inline-item"> <a class="text-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ url('<current>') }}" target="_blank">Facebook</a> </li>
+          <li class="list-inline-item"> <a class="text-twitter" href="https://twitter.com/intent/tweet?text={{ url('<current>') }}" target="_blank">Twitter</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mb-5">
+  <h4 class="mb-3">{{ 'You might like these properties'|t }}</h4>
+  {{ drupal_view('taxonomy_term', 'block_1') }}
+</div>

@@ -1,0 +1,9 @@
+uuid: 76b6993b-caac-4dd0-8407-ada7adca64e9
+langcode: en-gb
+status: true
+dependencies: {  }
+name: 'Property type'
+vid: property_type
+description: 'Property type for rentals'
+weight: 0
+new_revision: false

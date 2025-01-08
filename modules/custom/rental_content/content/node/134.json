@@ -1,0 +1,128 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: cf8f578c-8914-4c4e-a54b-64a0b38698fa
+  bundle: realty
+  default_langcode: en-gb
+  depends:
+    281ccc9d-c275-4bb8-b436-bbacb81c8a2b: taxonomy_term
+    b45aa2ef-5104-4a7b-9afc-d1d3766de3cd: taxonomy_term
+    4bae4e51-1642-49dc-bfae-af50ee9a57b9: taxonomy_term
+    92e2f5d6-7805-4252-93c3-00a051435f12: taxonomy_term
+    28563002-abe7-4238-96ee-262a40d15fc3: taxonomy_term
+    b0143b03-5afb-4080-9f23-a4c588c3f78a: taxonomy_term
+    2c261437-a9a3-4cdb-b1de-bd5276f7c9a1: taxonomy_term
+    9e472e1c-c4d0-4262-ac76-8ae92792cb29: file
+    87db4c5c-0207-4868-8b66-87569573483b: file
+    1776afc8-3cbb-4c75-a63c-9be65780dc5b: file
+    18b427f3-e450-4495-b9ea-b4b47ffa86e9: taxonomy_term
+    41fc0202-d58a-4488-9fe9-973bfd141ca2: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Villa in Los Angeles'
+  created:
+    -
+      value: 1736367808
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /villa-los-angeles-0
+      langcode: en-gb
+      pathauto: 1
+  body:
+    -
+      value: '<p class="text-align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur neque massa, congue vel sollicitudin vitae, luctus et nibh. Aenean in arcu tortor. Praesent egestas turpis nec vehicula molestie. Donec lacinia ornare posuere. Sed ultrices id sem sit amet rutrum. Praesent molestie orci vitae ullamcorper volutpat. Maecenas nec augue odio. Vestibulum vehicula diam eu nibh sagittis commodo. Praesent commodo in libero vitae eleifend. Sed ut lobortis tellus, sit amet gravida eros. Nunc egestas tristique arcu in placerat. Phasellus vel vulputate magna, in lacinia nisl. Fusce eu ante pulvinar, luctus sapien ac, maximus tortor. Praesent at quam mollis, consectetur tellus nec, sodales libero.</p><p class="text-align-justify">Sed facilisis tempus orci, auctor gravida nunc porttitor sed. Praesent sed odio at dui ullamcorper molestie. Cras accumsan malesuada justo id hendrerit. Nullam sollicitudin aliquet nunc in tempus. Suspendisse lobortis suscipit metus, quis sodales quam tincidunt sed. Morbi accumsan dictum nibh, vel aliquet orci feugiat vehicula. Morbi vel metus dictum, accumsan diam nec, rutrum diam. Fusce maximus ullamcorper ante. Donec quis dignissim nunc. Etiam luctus dictum enim at efficitur. Praesent sit amet augue tellus. Aliquam imperdiet pellentesque semper. Fusce sit amet enim ligula.</p><p class="text-align-justify">Phasellus ultricies molestie dignissim. Nunc luctus tortor ipsum, blandit scelerisque quam dictum nec. Nam maximus sollicitudin urna commodo tincidunt. Morbi id euismod augue. Nunc sodales nulla sit amet urna eleifend, sed interdum nibh molestie. Suspendisse nisi diam, mollis sit amet convallis at, pretium ac justo. Praesent id mi a odio consequat ornare id et lectus. Fusce eu turpis in odio bibendum facilisis sit amet in purus. Etiam luctus lacus aliquam, fermentum ipsum id, maximus arcu. Phasellus id mauris purus. Nulla sollicitudin, libero ut luctus finibus, arcu leo egestas nunc, non ornare nibh dui vehicula elit. Quisque convallis est lectus, id faucibus nulla vulputate sed.</p><p class="text-align-justify">Maecenas tempus malesuada fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec semper sapien ut turpis sagittis commodo at ac ante. Aliquam varius sem ac lorem cursus, non ultrices massa varius. Mauris nisl justo, lacinia a ligula ut, cursus aliquet metus. Integer blandit finibus ex ac vestibulum. Suspendisse consequat, metus eu commodo consectetur, dolor augue hendrerit metus, in egestas felis dolor eu neque. Donec tristique libero non dolor euismod lacinia. Integer commodo efficitur lectus vitae accumsan. Quisque sit amet est sed mi sollicitudin sagittis vitae mollis nisi.</p><p class="text-align-justify">Suspendisse potenti. Nullam quis auctor sem. Curabitur faucibus venenatis turpis quis tristique. Etiam fringilla cursus nisi id aliquam. Fusce blandit quis lacus in posuere. Mauris viverra aliquet erat non placerat. Morbi mauris eros, fringilla ut arcu ac, pellentesque dignissim sapien.</p>'
+      format: full_html
+      summary: ''
+  field_address:
+    -
+      langcode: en-gb
+      country_code: US
+      administrative_area: CA
+      locality: 'Los Angeles'
+      dependent_locality: ''
+      postal_code: '90034'
+      address_line1: '3613 Glendon Avenue'
+      address_line2: ''
+  field_approximate_location:
+    -
+      lat: 34.021070268071
+      lng: -118.4117326
+      lat_sin: 0.55949774053199
+      lat_cos: 0.82883187579846
+      lng_rad: -2.0666746068611
+      data: {  }
+  field_bathroom:
+    -
+      value: 2
+  field_bedroom:
+    -
+      value: 3
+  field_build_size:
+    -
+      value: 120.0
+  field_key_features:
+    -
+      entity: 281ccc9d-c275-4bb8-b436-bbacb81c8a2b
+    -
+      entity: b45aa2ef-5104-4a7b-9afc-d1d3766de3cd
+    -
+      entity: 4bae4e51-1642-49dc-bfae-af50ee9a57b9
+    -
+      entity: 92e2f5d6-7805-4252-93c3-00a051435f12
+    -
+      entity: 28563002-abe7-4238-96ee-262a40d15fc3
+    -
+      entity: b0143b03-5afb-4080-9f23-a4c588c3f78a
+  field_location:
+    -
+      entity: 2c261437-a9a3-4cdb-b1de-bd5276f7c9a1
+  field_photos:
+    -
+      entity: 9e472e1c-c4d0-4262-ac76-8ae92792cb29
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1239
+    -
+      entity: 87db4c5c-0207-4868-8b66-87569573483b
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1280
+    -
+      entity: 1776afc8-3cbb-4c75-a63c-9be65780dc5b
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1272
+  field_plot_size:
+    -
+      value: 10.0
+  field_price_per_month:
+    -
+      value: '4500.00'
+  field_property_type:
+    -
+      entity: 18b427f3-e450-4495-b9ea-b4b47ffa86e9
+  field_type:
+    -
+      entity: 41fc0202-d58a-4488-9fe9-973bfd141ca2

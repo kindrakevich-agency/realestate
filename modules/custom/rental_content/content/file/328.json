@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: d7755c17-d2cb-4313-bcbf-db6ae2fd7481
+  bundle: undefined
+  default_langcode: en-gb
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: artists-eyes-B6bZcuTn_MI-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-01/artists-eyes-B6bZcuTn_MI-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 1118058
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1736362869
+  path:
+    -
+      alias: ''
+      langcode: en-gb
+      pathauto: 0
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Inoxa'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/empty-front-page'

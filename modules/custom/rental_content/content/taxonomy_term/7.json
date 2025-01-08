@@ -1,0 +1,37 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: b0143b03-5afb-4080-9f23-a4c588c3f78a
+  bundle: key_features
+  default_langcode: en-gb
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Views
+  description:
+    -
+      value: '<p>Garden &amp; Pool Views, Mountain Views</p>'
+      format: basic_html
+  weight:
+    -
+      value: 9
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /views
+      langcode: en-gb
+      pathauto: 1

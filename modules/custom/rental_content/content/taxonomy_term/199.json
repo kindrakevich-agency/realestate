@@ -1,0 +1,37 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 81a7c9ef-70eb-43ef-b55f-fcc7bd826312
+  bundle: key_features
+  default_langcode: en-gb
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Disabled access'
+  description:
+    -
+      value: '<p>Only residents have access to property</p>'
+      format: full_html
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /disabled-access
+      langcode: en-gb
+      pathauto: 1

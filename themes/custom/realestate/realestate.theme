@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * @file
+ * realestate theme file.
+ */
+
+
+/**
+ * Callback to convert attributes class which is string to array.
+ *
+ * @param array $variables
+ *   The variables to render from preprocess function.
+ */
+function realestate_attributes_class_string_to_array(&$variables) {
+  if (isset($variables['attributes']) &&
+    isset($variables['attributes']['class']) &&
+    !is_array($variables['attributes']['class'])) {
+    $variables['attributes']['class'] = [$variables['attributes']['class']];
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for menu-local-task templates.
+ */
+function realestate_preprocess_menu_local_task(&$variables) {
+  // Ensure is-active class is set when the tab is active. The generic active
+  // link handler applies stricter comparison rules than what is necessary for
+  // tabs.
+  if (isset($variables['is_active']) && $variables['is_active'] === TRUE) {
+    $variables['link']['#options']['attributes']['class'][] = 'nav-link active is-active';
+  }
+  else {
+    $variables['link']['#options']['attributes']['class'][] = 'nav-link';
+  }
+
+  if (isset($variables['element']['#level'])) {
+    $variables['level'] = $variables['element']['#level'];
+  }
+}
+
+/**
+ * Implements template_preprocess_HOOK() for input.
+ */
+function realestate_preprocess_input(&$variables) {
+  realestate_attributes_class_string_to_array($variables);
+
+  $type_html = $variables['attributes']['type'];
+  $text_types_html = [
+    'text',
+    'email',
+    'tel',
+    'number',
+    'search',
+    'password',
+    'url',
+    'month',
+    'week',
+    'date',
+    'time',
+  ];
+
+  if (in_array($type_html, $text_types_html)) {
+    $variables['attributes']['class'][] = 'form-control';
+  }
+
+  if (in_array($type_html, ['checkbox'])) {
+    $variables['attributes']['class'][] = 'form-check-input';
+  }
+}
+
+/**
+ * Implements theme_preprocess_image().
+ */
+function realestate_preprocess_image(&$variables) {
+  realestate_attributes_class_string_to_array($variables);
+  $variables['attributes']['class'][] = 'img-fluid';
+}

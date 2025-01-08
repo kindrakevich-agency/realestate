@@ -1,0 +1,9 @@
+uuid: 877fd948-b67a-46e6-8d7c-ee98718fa4e4
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Type
+vid: type
+description: 'Type for property'
+weight: 0
+new_revision: false

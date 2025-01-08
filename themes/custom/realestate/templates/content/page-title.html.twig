@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Theme override for page titles.
+ *
+ * Available variables:
+ * - title_attributes: HTML attributes for the page title element.
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title: The page title, for use in the actual content.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ */
+#}
+
+{% if title|render|striptags|trim %}
+  <div data-type="{{ content_type }}" class="{% if content_type == 'page' %}text-center{% else %}d-lg-flex justify-content-lg-between{% endif %} mb-1 mt-3">
+    <div class="mb-2 mb-lg-0">
+      <h1 class="fs-3">{{ title }}</h1>
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,23 @@
+uuid: e9edcae3-beac-4858-bde5-726796f3ecaa
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plot_size
+    - node.type.realty
+id: node.realty.field_plot_size
+field_name: field_plot_size
+entity_type: node
+bundle: realty
+label: 'Plot size'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: m²
+field_type: float

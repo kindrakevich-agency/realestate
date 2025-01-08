@@ -1,0 +1,22 @@
+uuid: 86c2dc1b-52bf-40e0-aee7-2602bb4ee3eb
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - realestate
+_core:
+  default_config_hash: TICBg4ZLbnwRPLMVReCkpoASwtrw_ucbLUFXhye3cOM
+id: realestate_messages
+theme: realestate
+region: content
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

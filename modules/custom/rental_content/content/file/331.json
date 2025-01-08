@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: a7212317-306a-4db9-8d3f-844ebb0eca0d
+  bundle: undefined
+  default_langcode: en-gb
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: todd-quackenbush-GMTx7uC6lNc-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-01/todd-quackenbush-GMTx7uC6lNc-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 480976
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1736364201
+  path:
+    -
+      alias: ''
+      langcode: en-gb
+      pathauto: 0
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Inoxa'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/empty-front-page'

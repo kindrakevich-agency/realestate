@@ -1,0 +1,23 @@
+uuid: c6fc0769-1b7f-430a-acaf-f10dc89098aa
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bathroom
+    - node.type.realty
+id: node.realty.field_bathroom
+field_name: field_bathroom
+entity_type: node
+bundle: realty
+label: Bathroom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

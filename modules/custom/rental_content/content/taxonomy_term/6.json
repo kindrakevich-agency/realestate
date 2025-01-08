@@ -1,0 +1,37 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 0b55d6c2-16f7-49e3-8790-29d22a172c50
+  bundle: key_features
+  default_langcode: en-gb
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Parking
+  description:
+    -
+      value: '<p>Parking, Car Port</p>'
+      format: basic_html
+  weight:
+    -
+      value: 7
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /parking
+      langcode: en-gb
+      pathauto: 1

@@ -1,0 +1,13 @@
+global:
+  css:
+    theme:
+      css/bootstrap.min.css: {}
+
+realty:
+  css:
+    theme:
+      css/glightbox.min.css: {}
+  js:
+    js/sticky.min.js: {}
+    js/glightbox.min.js: {}
+    js/realty.init.js: {}

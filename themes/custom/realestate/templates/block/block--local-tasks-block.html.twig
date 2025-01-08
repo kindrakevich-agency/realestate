@@ -1,0 +1,14 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for tabs.
+ */
+#}
+{% block content %}
+  {% if content %}
+    <div class="mb-3">
+      {{ content }}
+    </div>
+  {% endif %}
+{% endblock %}

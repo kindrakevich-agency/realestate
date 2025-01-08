@@ -1,0 +1,29 @@
+uuid: 41fe3ee7-1ded-4784-9393-c5e4f4c1a566
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - views.view.search_property_by_city
+  module:
+    - system
+    - views
+  theme:
+    - realestate
+id: realestate_views_block__search_property_by_city_block_1
+theme: realestate
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:search_property_by_city-block_1'
+settings:
+  id: 'views_block:search_property_by_city-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,37 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 138a192e-fdd7-401b-90c4-7495487a390f
+  bundle: key_features
+  default_langcode: en-gb
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Near golf'
+  description:
+    -
+      value: '<p>Play golf near home. These places are best for golf.</p>'
+      format: full_html
+  weight:
+    -
+      value: 5
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /near-golf
+      langcode: en-gb
+      pathauto: 1

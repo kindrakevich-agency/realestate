@@ -1,0 +1,17 @@
+uuid: 92694055-132d-4888-8963-0b22d236317b
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Realty
+type: realty
+description: 'Real estate is property consisting of land and the buildings on it, along with its natural resources such as growing crops (eg. timber), minerals or water, and wild animals; immovable property of this nature; an interest vested in this (also) an item of real property, (more generally) buildings or housing in general.'
+help: null
+new_revision: true
+preview_mode: 0
+display_submitted: true

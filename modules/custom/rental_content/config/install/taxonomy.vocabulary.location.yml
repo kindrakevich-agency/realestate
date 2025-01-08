@@ -1,0 +1,9 @@
+uuid: 38e0adcb-bd81-468f-9246-2c22a9cf07c8
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Location
+vid: location
+description: 'Locations for rentals'
+weight: 0
+new_revision: false

@@ -1,0 +1,44 @@
+_meta:
+  version: '1.0'
+  entity_type: file
+  uuid: 6212071a-d7d2-4252-bb92-21098b95078b
+  bundle: undefined
+  default_langcode: en-gb
+default:
+  uid:
+    -
+      target_id: 1
+  filename:
+    -
+      value: peter-thomas-17EJD0QdKFI-unsplash.jpg
+  uri:
+    -
+      value: 'public://2025-01/peter-thomas-17EJD0QdKFI-unsplash.jpg'
+  filemime:
+    -
+      value: image/jpeg
+  filesize:
+    -
+      value: 426526
+  status:
+    -
+      value: true
+  created:
+    -
+      value: 1736363296
+  path:
+    -
+      alias: ''
+      langcode: en-gb
+      pathauto: 0
+  metatag:
+    -
+      tag: meta
+      attributes:
+        name: title
+        content: '| Inoxa'
+    -
+      tag: link
+      attributes:
+        rel: canonical
+        href: 'http://default/empty-front-page'

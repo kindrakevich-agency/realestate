@@ -1,0 +1,54 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: 2c261437-a9a3-4cdb-b1de-bd5276f7c9a1
+  bundle: location
+  default_langcode: en-gb
+  depends:
+    6212071a-d7d2-4252-bb92-21098b95078b: file
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'Los Angeles'
+  description:
+    -
+      value: '<p>Los Angeles,[a] often referred to by its initials L.A., is the most populous city in the U.S. state of California. With an estimated 3,820,914 residents within the city limits as of 2023,[8] it is the second-most populous city in the United States, behind only New York City; it is also the commercial, financial and cultural center of Southern California. Los Angeles has an ethnically and culturally diverse population, and is the principal city of a metropolitan area of 12.8 million people (2023). Greater Los Angeles, which includes the Los Angeles and Riverside–San Bernardino metropolitan areas, is a sprawling metropolis of over 18.3 million residents.</p>'
+      format: full_html
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /los-angeles
+      langcode: en-gb
+      pathauto: 1
+  field_location:
+    -
+      lat: 34.021070268071
+      lng: -118.4117326
+      lat_sin: 0.55949774053199
+      lat_cos: 0.82883187579846
+      lng_rad: -2.0666746068611
+      data: {  }
+  field_photos:
+    -
+      entity: 6212071a-d7d2-4252-bb92-21098b95078b
+      alt: 'Los Angeles'
+      title: ''
+      width: 1920
+      height: 1280

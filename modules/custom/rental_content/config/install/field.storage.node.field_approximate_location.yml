@@ -1,0 +1,19 @@
+uuid: 337776c5-e4d4-4cbc-9803-bac1195aae13
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - geolocation
+    - node
+id: node.field_approximate_location
+field_name: field_approximate_location
+entity_type: node
+type: geolocation
+settings: {  }
+module: geolocation
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

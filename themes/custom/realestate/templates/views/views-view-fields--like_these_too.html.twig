@@ -1,0 +1,50 @@
+{#
+/**
+ * @file
+ * Theme override to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ */
+#}
+
+{% set field_type = fields.field_type.content|striptags|trim %}
+
+<div class="col-sm-6 col-md-12 col-lg-6">
+  <img src="{{ fields.field_photos.content|striptags|trim }}" class="card-img rounded-0" alt="">
+</div>
+<div class="col-sm-6 col-md-12 col-lg-6">
+  <div class="card-body p-3">
+    <h6 class="card-title">{{ fields.title.content }}</h6>
+    {% if field_type == '201' %}
+      <p class="mb-0">{{ 'Price'|t }} {{ fields.field_price_per_month.content }}</p>
+    {% else %}
+      <p class="mb-0">{{ 'Only for'|t }} {{ fields.field_price_per_month.content }} {{ 'per month'|t }}</p>
+    {% endif %}
+    <div class="d-grid">
+      {{ fields.view_node.content }}
+    </div>
+  </div>
+</div>

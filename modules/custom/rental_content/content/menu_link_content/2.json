@@ -1,0 +1,35 @@
+_meta:
+  version: '1.0'
+  entity_type: menu_link_content
+  uuid: aadb2eed-b66f-4be1-9bec-8f8a02b201cf
+  bundle: menu_link_content
+  default_langcode: en-gb
+default:
+  enabled:
+    -
+      value: true
+  title:
+    -
+      value: 'Properties to rent'
+  menu_name:
+    -
+      value: main
+  link:
+    -
+      uri: 'internal:/rent'
+      title: ''
+  external:
+    -
+      value: false
+  rediscover:
+    -
+      value: true
+  weight:
+    -
+      value: -49
+  expanded:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true

@@ -1,0 +1,21 @@
+uuid: 3aed3733-5057-4102-8997-e39cac3acba1
+langcode: en-gb
+status: true
+dependencies: {  }
+name: property_small
+label: 'Property small'
+effects:
+  edf9a1f3-8173-420b-b58e-7a9e4f437c40:
+    uuid: edf9a1f3-8173-420b-b58e-7a9e4f437c40
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 480
+      anchor: center-center
+  3193e941-f2d4-4ff6-99ef-aaac1e7673d3:
+    uuid: 3193e941-f2d4-4ff6-99ef-aaac1e7673d3
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

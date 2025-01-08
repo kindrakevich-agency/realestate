@@ -1,0 +1,25 @@
+uuid: a70906d8-4aa6-4022-b424-74e7266fd913
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - rental
+    - system
+  theme:
+    - realestate
+id: realestate_searchrentalblockform
+theme: realestate
+region: search_rental
+weight: 0
+provider: null
+plugin: rental_search_block
+settings:
+  id: rental_search_block
+  label: 'Search rental block form'
+  label_display: '0'
+  provider: rental
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/taxonomy/term/*\r\n/bookmarks\r\n/node/*"

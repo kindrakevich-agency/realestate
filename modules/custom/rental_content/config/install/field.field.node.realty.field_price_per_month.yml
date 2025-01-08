@@ -1,0 +1,23 @@
+uuid: 987f320a-6079-401e-bfb1-32b23c9de646
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price_per_month
+    - node.type.realty
+id: node.realty.field_price_per_month
+field_name: field_price_per_month
+entity_type: node
+bundle: realty
+label: 'Price per month or sale price'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

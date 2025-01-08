@@ -1,0 +1,183 @@
+uuid: 2580c3b6-ca56-4cb4-b114-c64a731f8f87
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.realty.body
+    - field.field.node.realty.field_address
+    - field.field.node.realty.field_approximate_location
+    - field.field.node.realty.field_bathroom
+    - field.field.node.realty.field_bedroom
+    - field.field.node.realty.field_build_size
+    - field.field.node.realty.field_key_features
+    - field.field.node.realty.field_location
+    - field.field.node.realty.field_photos
+    - field.field.node.realty.field_plot_size
+    - field.field.node.realty.field_price_per_month
+    - field.field.node.realty.field_property_type
+    - field.field.node.realty.field_type
+    - filter.format.plain_text
+    - image.style.wide
+    - node.type.realty
+  module:
+    - address
+    - geolocation
+    - svg_image
+    - text
+    - user
+id: node.realty.default
+targetEntityType: node
+bundle: realty
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_address:
+    type: address_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_approximate_location:
+    type: geolocation_map
+    label: above
+    settings:
+      set_marker: true
+      show_label: false
+      common_map: true
+      show_delta_label: false
+      use_overridden_map_settings: false
+      title: ''
+      info_text:
+        value: ''
+        format: plain_text
+      centre:
+        fit_bounds:
+          enable: true
+          weight: -101
+          settings:
+            reset_zoom: true
+          map_center_id: fit_bounds
+      map_provider_id: google_maps
+      map_provider_settings: {  }
+      data_provider_settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_bathroom:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_bedroom:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_build_size:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_key_features:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_photos:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: lazy
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_plot_size:
+    type: number_decimal
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_price_per_month:
+    type: number_decimal
+    label: hidden
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 0
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_property_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 111
+    region: content
+  field_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 112
+    region: content
+  flag_bookmark:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+{% if attributes.id == 'node-realty-form' or attributes.id == 'node-realty-edit-form' or attributes.id == 'booking-booking-form' or attributes.id == 'booking-booking-edit-form' or attributes.id == 'booking-client-form' or attributes.id == 'booking-client-edit-form' %}
+<div class="row mt-4">
+  <div class="col-12">
+    <div class="card border rounded-3">
+      <div class="card-body form-styled">
+      {% endif %}
+
+        <form{{ attributes }}>
+          {{ children }}
+        </form>
+
+      {% if attributes.id == 'node-realty-form' or attributes.id == 'node-realty-edit-form' or attributes.id == 'booking-booking-form' or attributes.id == 'booking-booking-edit-form' or attributes.id == 'booking-client-form' or attributes.id == 'booking-client-edit-form' %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

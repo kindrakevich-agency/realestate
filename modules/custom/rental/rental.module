@@ -1,0 +1,51 @@
+<?php
+use \Drupal\views\ViewExecutable;
+use \Drupal\views\Plugin\views\query\QueryPluginBase;
+
+function rental_mail($key, &$message, $params) {
+   $options = array(
+     'langcode' => $message['langcode'],
+   );
+   switch ($key) {
+     case 'general_mail':
+       $message['from'] = \Drupal::config('system.site')->get('mail');
+       $message['subject'] = t('General mail: @subject', ['@subject' => $params['subject']], $options);
+       $message['body'][] = $params['message'];
+       break;
+   }
+}
+
+function rental_views_pre_view(ViewExecutable $view, $display_id, array &$args) {
+    if ($view->id() == 'taxonomy_term' && $display_id == 'page_1') {
+       $location = \Drupal::request()->query->get('location');
+       if($location){
+          $args[1] = $location;
+       } else {
+          $args[1] = 'all';
+       }
+       $bedrooms = \Drupal::request()->query->get('bedrooms');
+       if($bedrooms){
+          $items = [];
+          for ($i = $bedrooms; $i <= 10+$bedrooms; $i++) {
+              $items[] = $i;
+          }
+          $args[2] = implode(',', $items);
+       }
+    }
+}
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function rental_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+    if ($view->id() == 'taxonomy_term') {
+        $bedrooms = \Drupal::request()->query->get('bedrooms');
+        if($bedrooms){
+          $query->orderby = [];
+          $query->orderby[] = [
+            'field' => 'node__field_bedroom.field_bedroom_value',
+            'direction' => 'ASC'
+          ];
+        }
+    }
+}

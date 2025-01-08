@@ -1,0 +1,54 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: f97eb7cb-1ced-4f13-b14d-03ae500fcbdd
+  bundle: location
+  default_langcode: en-gb
+  depends:
+    a7212317-306a-4db9-8d3f-844ebb0eca0d: file
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: 'New York City'
+  description:
+    -
+      value: "<p>New York, often called New York City[b] or NYC, is the most populous city in the United States, located at the southern tip of New York State on one of the world's largest natural harbors. The city comprises five boroughs, each coextensive with a respective county. The city is the geographical and demographic center of both the Northeast megalopolis and the New York metropolitan area, the largest metropolitan area in the United States by both population and urban area. New York is a global center of finance[11] and commerce, culture, technology,[12] entertainment and media, academics and scientific output,[13] the arts and fashion, and, as home to the headquarters of the United Nations, international diplomacy.[14][15][16][17][18]</p>"
+      format: full_html
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /new-york-city
+      langcode: en-gb
+      pathauto: 1
+  field_location:
+    -
+      lat: 40.69750662509
+      lng: -73.979506
+      lat_sin: 0.65206541102488
+      lat_cos: 0.75816271323836
+      lng_rad: -1.2911859586989
+      data: {  }
+  field_photos:
+    -
+      entity: a7212317-306a-4db9-8d3f-844ebb0eca0d
+      alt: ' New York City'
+      title: ''
+      width: 1920
+      height: 1280

@@ -1,0 +1,29 @@
+uuid: 83a0c85e-d82e-47f1-8adc-c3000d04a172
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_key_features
+    - node.type.realty
+    - taxonomy.vocabulary.key_features
+id: node.realty.field_key_features
+field_name: field_key_features
+entity_type: node
+bundle: realty
+label: 'Key features'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      key_features: key_features
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+{% if page.search_rental %}
+<section class="py-3 py-sm-0 search-inner-form">
+	<div class="container">
+		<button class="btn btn-primary d-sm-none w-100 mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEditsearch" aria-controls="offcanvasEditsearch"><i class="bi bi-pencil-square me-2"></i>{{ 'Search'|t }}</button>
+		<div class="offcanvas-sm offcanvas-top" tabindex="-1" id="offcanvasEditsearch" aria-labelledby="offcanvasEditsearchLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasEditsearchLabel">{{ 'Search'|t }}</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasEditsearch" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="bg-light rounded w-100">
+					{{ page.search_rental }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endif %}

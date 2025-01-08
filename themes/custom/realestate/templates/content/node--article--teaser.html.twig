@@ -1,0 +1,18 @@
+<div class="col-lg-6">
+  <div class="card bg-transparent mb-4 mb-sm-0">
+    <div class="position-relative">
+      <a href="{{ url }}">
+        <img src="{{ node.field_image.0.entity.uri.value|image_style('card') }}" class="card-img" alt="{{ label }}">
+      </a>
+    </div>
+    <div class="card-body px-3 pb-0">
+      <div class="mb-2">{{ node.created.value|date('U')|format_date('medium') }}</div>
+      <a href="{{ url }}"><h5 class="card-title">{{ label }}</h5></a>
+      <p class="mb-0">{{ content.body }}</p>
+      <div class="d-flex justify-content-between align-items-center mt-2">
+        <h6 class="mb-0">{{ 'By Rental Team'|t }}</h6>
+        <a href="{{ url }}" class="btn btn-primary mb-2">{{ 'Read more'|t }}</a>
+      </div>
+    </div>
+  </div>
+</div>

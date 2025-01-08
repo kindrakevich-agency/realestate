@@ -1,0 +1,43 @@
+uuid: cc9ff550-9d3e-43cb-aaa9-ec09a8e39d9e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.realty
+  module:
+    - address
+id: node.realty.field_address
+field_name: field_address
+entity_type: node
+bundle: realty
+label: Address
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine2:
+      override: optional
+    addressLine3:
+      override: hidden
+    postalCode:
+      override: optional
+    sortingCode:
+      override: hidden
+    administrativeArea:
+      override: optional
+  fields: {  }
+field_type: address

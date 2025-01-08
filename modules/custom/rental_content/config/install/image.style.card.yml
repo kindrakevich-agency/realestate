@@ -1,0 +1,21 @@
+uuid: 7533edff-abf2-4729-ac76-2629ccba3390
+langcode: en-gb
+status: true
+dependencies: {  }
+name: card
+label: card
+effects:
+  50e83c1e-adbb-4845-b569-0e78651af82e:
+    uuid: 50e83c1e-adbb-4845-b569-0e78651af82e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 450
+      anchor: center-center
+  267b00b4-e1ad-48ed-aeda-732309a5a565:
+    uuid: 267b00b4-e1ad-48ed-aeda-732309a5a565
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

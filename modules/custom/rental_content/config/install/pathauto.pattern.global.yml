@@ -1,0 +1,24 @@
+uuid: 45d21c0b-dd11-438c-9808-a99b38cae6e1
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: global
+label: Global
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  21d0a547-105c-4889-8b3c-1bebc4c133f1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 21d0a547-105c-4889-8b3c-1bebc4c133f1
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      page: page
+      realty: realty
+selection_logic: and
+weight: -5
+relationships: {  }

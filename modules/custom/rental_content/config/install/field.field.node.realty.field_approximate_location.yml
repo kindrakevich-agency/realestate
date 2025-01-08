@@ -1,0 +1,21 @@
+uuid: 8e6334ae-b982-4dd3-9e70-5d7ee90a533d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_approximate_location
+    - node.type.realty
+  module:
+    - geolocation
+id: node.realty.field_approximate_location
+field_name: field_approximate_location
+entity_type: node
+bundle: realty
+label: 'Approximate location'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

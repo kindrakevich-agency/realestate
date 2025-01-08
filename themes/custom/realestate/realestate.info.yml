@@ -1,0 +1,13 @@
+name: Realestate
+type: theme
+description: 'Simple theme for real estate sites based on Bootstrap 5.'
+core_version_requirement: '^9.4 || ^10'
+base theme: false
+libraries:
+  - realestate/global
+regions:
+  nav_main: 'Main navigation region'
+  top_property: 'Top property'
+  content_header: 'Content header'
+  content: 'Main content'
+  search_rental: 'Search rental'

@@ -1,0 +1,108 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: bb866a62-4734-4dde-abd3-f68ac1dd6052
+  bundle: realty
+  default_langcode: en-gb
+  depends:
+    4bae4e51-1642-49dc-bfae-af50ee9a57b9: taxonomy_term
+    92e2f5d6-7805-4252-93c3-00a051435f12: taxonomy_term
+    153ac3b0-8a08-4f32-9d09-dfc5fb11a2b5: taxonomy_term
+    b0143b03-5afb-4080-9f23-a4c588c3f78a: taxonomy_term
+    2c261437-a9a3-4cdb-b1de-bd5276f7c9a1: taxonomy_term
+    3ee95c2a-29e8-4c9d-a520-0788ae8c034d: file
+    4c4112d4-6391-4460-a190-9ed4961a2c98: taxonomy_term
+    41fc0202-d58a-4488-9fe9-973bfd141ca2: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Town House in Los Angeles'
+  created:
+    -
+      value: 1736366896
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /town-house-los-angeles
+      langcode: en-gb
+      pathauto: 1
+  body:
+    -
+      value: '<p class="text-align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur neque massa, congue vel sollicitudin vitae, luctus et nibh. Aenean in arcu tortor. Praesent egestas turpis nec vehicula molestie. Donec lacinia ornare posuere. Sed ultrices id sem sit amet rutrum. Praesent molestie orci vitae ullamcorper volutpat. Maecenas nec augue odio. Vestibulum vehicula diam eu nibh sagittis commodo. Praesent commodo in libero vitae eleifend. Sed ut lobortis tellus, sit amet gravida eros. Nunc egestas tristique arcu in placerat. Phasellus vel vulputate magna, in lacinia nisl. Fusce eu ante pulvinar, luctus sapien ac, maximus tortor. Praesent at quam mollis, consectetur tellus nec, sodales libero.</p><p class="text-align-justify">Sed facilisis tempus orci, auctor gravida nunc porttitor sed. Praesent sed odio at dui ullamcorper molestie. Cras accumsan malesuada justo id hendrerit. Nullam sollicitudin aliquet nunc in tempus. Suspendisse lobortis suscipit metus, quis sodales quam tincidunt sed. Morbi accumsan dictum nibh, vel aliquet orci feugiat vehicula. Morbi vel metus dictum, accumsan diam nec, rutrum diam. Fusce maximus ullamcorper ante. Donec quis dignissim nunc. Etiam luctus dictum enim at efficitur. Praesent sit amet augue tellus. Aliquam imperdiet pellentesque semper. Fusce sit amet enim ligula.</p><p class="text-align-justify">Phasellus ultricies molestie dignissim. Nunc luctus tortor ipsum, blandit scelerisque quam dictum nec. Nam maximus sollicitudin urna commodo tincidunt. Morbi id euismod augue. Nunc sodales nulla sit amet urna eleifend, sed interdum nibh molestie. Suspendisse nisi diam, mollis sit amet convallis at, pretium ac justo. Praesent id mi a odio consequat ornare id et lectus. Fusce eu turpis in odio bibendum facilisis sit amet in purus. Etiam luctus lacus aliquam, fermentum ipsum id, maximus arcu. Phasellus id mauris purus. Nulla sollicitudin, libero ut luctus finibus, arcu leo egestas nunc, non ornare nibh dui vehicula elit. Quisque convallis est lectus, id faucibus nulla vulputate sed.</p><p class="text-align-justify">Maecenas tempus malesuada fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec semper sapien ut turpis sagittis commodo at ac ante. Aliquam varius sem ac lorem cursus, non ultrices massa varius. Mauris nisl justo, lacinia a ligula ut, cursus aliquet metus. Integer blandit finibus ex ac vestibulum. Suspendisse consequat, metus eu commodo consectetur, dolor augue hendrerit metus, in egestas felis dolor eu neque. Donec tristique libero non dolor euismod lacinia. Integer commodo efficitur lectus vitae accumsan. Quisque sit amet est sed mi sollicitudin sagittis vitae mollis nisi.</p><p class="text-align-justify">Suspendisse potenti. Nullam quis auctor sem. Curabitur faucibus venenatis turpis quis tristique. Etiam fringilla cursus nisi id aliquam. Fusce blandit quis lacus in posuere. Mauris viverra aliquet erat non placerat. Morbi mauris eros, fringilla ut arcu ac, pellentesque dignissim sapien.</p>'
+      format: full_html
+      summary: ''
+  field_address:
+    -
+      langcode: en-gb
+      country_code: US
+      administrative_area: CA
+      locality: 'Los Angeles'
+      dependent_locality: ''
+      postal_code: '90034'
+      address_line1: '3613 Glendon Avenue'
+      address_line2: ''
+  field_approximate_location:
+    -
+      lat: 34.021039144661
+      lng: -118.41175271657
+      lat_sin: 0.55949729030548
+      lat_cos: 0.82883217972086
+      lng_rad: -2.0666749579615
+      data: {  }
+  field_bathroom:
+    -
+      value: 1
+  field_bedroom:
+    -
+      value: 2
+  field_build_size:
+    -
+      value: 90.0
+  field_key_features:
+    -
+      entity: 4bae4e51-1642-49dc-bfae-af50ee9a57b9
+    -
+      entity: 92e2f5d6-7805-4252-93c3-00a051435f12
+    -
+      entity: 153ac3b0-8a08-4f32-9d09-dfc5fb11a2b5
+    -
+      entity: b0143b03-5afb-4080-9f23-a4c588c3f78a
+  field_location:
+    -
+      entity: 2c261437-a9a3-4cdb-b1de-bd5276f7c9a1
+  field_photos:
+    -
+      entity: 3ee95c2a-29e8-4c9d-a520-0788ae8c034d
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1280
+  field_plot_size:
+    -
+      value: 10.0
+  field_price_per_month:
+    -
+      value: '1600.00'
+  field_property_type:
+    -
+      entity: 4c4112d4-6391-4460-a190-9ed4961a2c98
+  field_type:
+    -
+      entity: 41fc0202-d58a-4488-9fe9-973bfd141ca2

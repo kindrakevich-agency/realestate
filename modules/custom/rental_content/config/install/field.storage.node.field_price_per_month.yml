@@ -1,0 +1,20 @@
+uuid: 2b301851-539d-473c-9fc0-a17bc0e98ba9
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_price_per_month
+field_name: field_price_per_month
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

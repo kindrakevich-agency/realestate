@@ -1,0 +1,37 @@
+_meta:
+  version: '1.0'
+  entity_type: taxonomy_term
+  uuid: b45aa2ef-5104-4a7b-9afc-d1d3766de3cd
+  bundle: key_features
+  default_langcode: en-gb
+default:
+  status:
+    -
+      value: true
+  name:
+    -
+      value: Garden
+  description:
+    -
+      value: "<p>Houses with garden where you can relax and enjoy nature's beauty.</p>"
+      format: full_html
+  weight:
+    -
+      value: 0
+  parent:
+    -
+      target_id: 0
+  revision_translation_affected:
+    -
+      value: true
+  content_translation_source:
+    -
+      value: und
+  content_translation_outdated:
+    -
+      value: false
+  path:
+    -
+      alias: /garden
+      langcode: en-gb
+      pathauto: 1

@@ -1,0 +1,151 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: ea0879ba-d3a8-4e58-8707-04f3739331e2
+  bundle: realty
+  default_langcode: en-gb
+  depends:
+    281ccc9d-c275-4bb8-b436-bbacb81c8a2b: taxonomy_term
+    28563002-abe7-4238-96ee-262a40d15fc3: taxonomy_term
+    f97eb7cb-1ced-4f13-b14d-03ae500fcbdd: taxonomy_term
+    334c6a8c-66b6-4ab8-a744-7e2b5b9d1c26: file
+    2b000a2e-4f34-4181-946c-90f910017bdd: file
+    efdc6e6f-dc55-4145-a512-3590da4e8696: file
+    3db408e2-35d9-4e5f-830b-1993baba9532: file
+    e330cc9d-e48c-4391-8b6f-4c5436dd5123: file
+    7c89b266-ab2e-4cf8-a2ad-fedb1680d1b3: file
+    64f7447e-0a1b-431f-a6f6-1a5c4e3e9427: file
+    5f42fe23-2d27-4238-aee7-7b8d2465beae: file
+    4c4112d4-6391-4460-a190-9ed4961a2c98: taxonomy_term
+    41fc0202-d58a-4488-9fe9-973bfd141ca2: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Town House in New York City'
+  created:
+    -
+      value: 1736367911
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: true
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: /town-house-new-york-city
+      langcode: en-gb
+      pathauto: 1
+  body:
+    -
+      value: '<p class="text-align-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur neque massa, congue vel sollicitudin vitae, luctus et nibh. Aenean in arcu tortor. Praesent egestas turpis nec vehicula molestie. Donec lacinia ornare posuere. Sed ultrices id sem sit amet rutrum. Praesent molestie orci vitae ullamcorper volutpat. Maecenas nec augue odio. Vestibulum vehicula diam eu nibh sagittis commodo. Praesent commodo in libero vitae eleifend. Sed ut lobortis tellus, sit amet gravida eros. Nunc egestas tristique arcu in placerat. Phasellus vel vulputate magna, in lacinia nisl. Fusce eu ante pulvinar, luctus sapien ac, maximus tortor. Praesent at quam mollis, consectetur tellus nec, sodales libero.</p><p class="text-align-justify">Sed facilisis tempus orci, auctor gravida nunc porttitor sed. Praesent sed odio at dui ullamcorper molestie. Cras accumsan malesuada justo id hendrerit. Nullam sollicitudin aliquet nunc in tempus. Suspendisse lobortis suscipit metus, quis sodales quam tincidunt sed. Morbi accumsan dictum nibh, vel aliquet orci feugiat vehicula. Morbi vel metus dictum, accumsan diam nec, rutrum diam. Fusce maximus ullamcorper ante. Donec quis dignissim nunc. Etiam luctus dictum enim at efficitur. Praesent sit amet augue tellus. Aliquam imperdiet pellentesque semper. Fusce sit amet enim ligula.</p><p class="text-align-justify">Phasellus ultricies molestie dignissim. Nunc luctus tortor ipsum, blandit scelerisque quam dictum nec. Nam maximus sollicitudin urna commodo tincidunt. Morbi id euismod augue. Nunc sodales nulla sit amet urna eleifend, sed interdum nibh molestie. Suspendisse nisi diam, mollis sit amet convallis at, pretium ac justo. Praesent id mi a odio consequat ornare id et lectus. Fusce eu turpis in odio bibendum facilisis sit amet in purus. Etiam luctus lacus aliquam, fermentum ipsum id, maximus arcu. Phasellus id mauris purus. Nulla sollicitudin, libero ut luctus finibus, arcu leo egestas nunc, non ornare nibh dui vehicula elit. Quisque convallis est lectus, id faucibus nulla vulputate sed.</p><p class="text-align-justify">Maecenas tempus malesuada fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec semper sapien ut turpis sagittis commodo at ac ante. Aliquam varius sem ac lorem cursus, non ultrices massa varius. Mauris nisl justo, lacinia a ligula ut, cursus aliquet metus. Integer blandit finibus ex ac vestibulum. Suspendisse consequat, metus eu commodo consectetur, dolor augue hendrerit metus, in egestas felis dolor eu neque. Donec tristique libero non dolor euismod lacinia. Integer commodo efficitur lectus vitae accumsan. Quisque sit amet est sed mi sollicitudin sagittis vitae mollis nisi.</p><p class="text-align-justify">Suspendisse potenti. Nullam quis auctor sem. Curabitur faucibus venenatis turpis quis tristique. Etiam fringilla cursus nisi id aliquam. Fusce blandit quis lacus in posuere. Mauris viverra aliquet erat non placerat. Morbi mauris eros, fringilla ut arcu ac, pellentesque dignissim sapien.</p>'
+      format: full_html
+      summary: ''
+  field_address:
+    -
+      langcode: en-gb
+      country_code: US
+      administrative_area: NY
+      locality: Brooklyn
+      dependent_locality: ''
+      postal_code: '11205'
+      address_line1: '2 Park Street'
+      address_line2: 'Fort Greene'
+  field_approximate_location:
+    -
+      lat: 40.69750662509
+      lng: -73.979506
+      lat_sin: 0.65206541102488
+      lat_cos: 0.75816271323836
+      lng_rad: -1.2911859586989
+      data: {  }
+  field_bathroom:
+    -
+      value: 1
+  field_bedroom:
+    -
+      value: 1
+  field_build_size:
+    -
+      value: 90.0
+  field_key_features:
+    -
+      entity: 281ccc9d-c275-4bb8-b436-bbacb81c8a2b
+    -
+      entity: 28563002-abe7-4238-96ee-262a40d15fc3
+  field_location:
+    -
+      entity: f97eb7cb-1ced-4f13-b14d-03ae500fcbdd
+  field_photos:
+    -
+      entity: 334c6a8c-66b6-4ab8-a744-7e2b5b9d1c26
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1280
+    -
+      entity: 2b000a2e-4f34-4181-946c-90f910017bdd
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1272
+    -
+      entity: efdc6e6f-dc55-4145-a512-3590da4e8696
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1239
+    -
+      entity: 3db408e2-35d9-4e5f-830b-1993baba9532
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1280
+    -
+      entity: e330cc9d-e48c-4391-8b6f-4c5436dd5123
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1276
+    -
+      entity: 7c89b266-ab2e-4cf8-a2ad-fedb1680d1b3
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1280
+    -
+      entity: 64f7447e-0a1b-431f-a6f6-1a5c4e3e9427
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1440
+    -
+      entity: 5f42fe23-2d27-4238-aee7-7b8d2465beae
+      alt: ''
+      title: ''
+      width: 1920
+      height: 1280
+  field_plot_size:
+    -
+      value: 10.0
+  field_price_per_month:
+    -
+      value: '1500.00'
+  field_property_type:
+    -
+      entity: 4c4112d4-6391-4460-a190-9ed4961a2c98
+  field_type:
+    -
+      entity: 41fc0202-d58a-4488-9fe9-973bfd141ca2
