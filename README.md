@@ -20,7 +20,6 @@ This repository contains a Drupal profile. When you put it in the `/profiles/con
     "drupal/default_content": "^2.0@alpha",
     "drupal/empty_front_page": "^1.1",
     "drupal/field_group": "^3.4",
-    "drupal/file_entity": "^2.1",
     "drupal/geolocation": "^3.12",
     "drupal/hal": "^2.0",
     "drupal/pathauto": "^1.12",
