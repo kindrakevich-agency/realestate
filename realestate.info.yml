@@ -47,7 +47,6 @@ dependencies:
   - 'default_content:default_content'
   - 'empty_front_page:empty_front_page'
   - 'field_group:field_group'
-  - 'file_entity:file_entity'
   - 'geolocation:geolocation'
   - 'pathauto:pathauto'
   - 'themable_forms:themable_forms'
