@@ -6,9 +6,9 @@ dependencies:
     - rental
     - system
   theme:
-    - realestate
-id: realestate_searchrentalblockform
-theme: realestate
+    - realestate_theme
+id: realestate_theme_searchrentalblockform
+theme: realestate_theme
 region: search_rental
 weight: 0
 provider: null

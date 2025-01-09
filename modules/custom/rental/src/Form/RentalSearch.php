@@ -54,7 +54,13 @@ class RentalSearch extends FormBase {
       $type = $form_state->getValue('type');
     }
     if(!$type){
-      $type = 200;
+      $type_term = \Drupal::entityTypeManager()
+      ->getStorage('taxonomy_term')
+      ->loadByProperties(['name' => 'Properties to rent']);
+      if($type_term){
+        reset($type_term);
+        $type = key($type_term);
+      }
     }
 
     if(!$location){
@@ -69,9 +75,6 @@ class RentalSearch extends FormBase {
     }
 
     $bedrooms = \Drupal::request()->query->get('bedrooms');
-
-    $requests = $location.'/'.$bedrooms.'/'.$type;
-    //\Drupal::logger('rental')->notice('<pre><code>init:' . print_r($requests, TRUE) . '</code></pre>' );
 
     if(\Drupal::service('path.matcher')->isFrontPage()){
       $form['#attributes']['class'][] = 'bg-light shadow rounded-3 p-4';
@@ -290,7 +293,7 @@ class RentalSearch extends FormBase {
     $form['row']['col']['row_inner']['col_type']['type'] = [
         '#type' => 'radios',
         '#options' => $options,
-        '#default_value' => 200,
+        '#default_value' => (int)$type,
         '#ajax' => [
           'callback' => '::updateLocationBedrooms',
           'event' => 'change',
@@ -421,8 +424,6 @@ class RentalSearch extends FormBase {
     $location = $form_state->getValue('location');
     $bedrooms = $form_state->getValue('bedrooms');
     $type = $form_state->getValue('type');
-    $requests = $location.'/'.$bedrooms.'/'.$type;
-    \Drupal::logger('rental')->notice('<pre><code>search:' . print_r($requests, TRUE) . '</code></pre>' );
     $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($type);
     if (!$term->get('path')->isEmpty()) {
         $path = $term->get('path')->alias;

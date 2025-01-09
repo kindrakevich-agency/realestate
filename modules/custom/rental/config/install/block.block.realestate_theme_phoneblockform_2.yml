@@ -5,9 +5,9 @@ dependencies:
   module:
     - rental
   theme:
-    - realestate
-id: realestate_phoneblockform_2
-theme: realestate
+    - realestate_theme
+id: realestate_theme_phoneblockform_2
+theme: realestate_theme
 region: content
 weight: -5
 provider: null

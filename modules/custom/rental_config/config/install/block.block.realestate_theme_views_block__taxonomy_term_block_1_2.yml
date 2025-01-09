@@ -8,9 +8,9 @@ dependencies:
     - system
     - views
   theme:
-    - realestate
-id: realestate_views_block__taxonomy_term_block_1_2
-theme: realestate
+    - realestate_theme
+id: realestate_theme_views_block__taxonomy_term_block_1_2
+theme: realestate_theme
 region: content
 weight: -6
 provider: null

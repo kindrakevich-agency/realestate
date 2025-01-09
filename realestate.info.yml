@@ -5,10 +5,6 @@ type: profile
 dependencies:
   - 'admin_toolbar:admin_toolbar'
   - 'admin_toolbar:admin_toolbar_tools'
-  - 'config_update:config_update'
-  - 'ctools:ctools'
-  - 'realestate:rental'
-  - 'realestate:rental_content'
   - 'drupal:block'
   - 'drupal:block_content'
   - 'drupal:breakpoint'
@@ -59,10 +55,8 @@ dependencies:
   - 'wpf:wpf'
   - 'svg_image:svg_image'
   - 'svg_image:svg_image_responsive'
-install: {  }
 themes:
-  - claro
-  - realestate
+  - realestate_theme
 distribution:
   name: 'Real Estate Profile'
 core_incompatible: false

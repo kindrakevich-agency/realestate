@@ -7,9 +7,9 @@ dependencies:
   module:
     - views
   theme:
-    - realestate
-id: realestate_views_block__taxonomy_term_block_2
-theme: realestate
+    - realestate_theme
+id: realestate_theme_views_block__taxonomy_term_block_2
+theme: realestate_theme
 region: top_property
 weight: 0
 provider: null

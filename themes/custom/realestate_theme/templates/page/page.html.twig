@@ -1,0 +1,13 @@
+{% include '@realestate_theme/page/header.html.twig' %}
+
+<main>
+  {% include '@realestate_theme/page/search.html.twig' %}
+  <div class="container">
+    {{ page.content_header }}
+    {{ page.content }}
+  </div>
+</main>
+
+{{ page.before_footer }}
+
+{% include '@realestate_theme/page/footer.html.twig' %}

@@ -1,0 +1,17 @@
+uuid: f8da8185-4683-4856-8ab6-474c8c1717e9
+langcode: en-gb
+status: true
+dependencies: {  }
+name: Code
+format: code
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: ''
+      filter_html_help: true
+      filter_html_nofollow: false

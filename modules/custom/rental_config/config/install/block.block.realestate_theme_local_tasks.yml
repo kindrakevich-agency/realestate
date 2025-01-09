@@ -3,11 +3,11 @@ langcode: en-gb
 status: true
 dependencies:
   theme:
-    - realestate
+    - realestate_theme
 _core:
   default_config_hash: YKMiOnVU5GsnSvD8R4lq4bNVS4vnvkczCqxMVx8Jatw
-id: realestate_local_tasks
-theme: realestate
+id: realestate_theme_local_tasks
+theme: realestate_theme
 region: content_header
 weight: -6
 provider: null

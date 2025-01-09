@@ -1,0 +1,4 @@
+name: 'Config YAML for Real Estate'
+type: module
+description: 'Default config YAML for Real Estate'
+core_version_requirement: ^9 || ^10

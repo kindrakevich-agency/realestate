@@ -1,0 +1,52 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the profilename install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function realestate_install() {
+  // Enable dependencies
+  \Drupal::service('module_installer')->install([
+    'serialization',
+    'hal',
+    'admin_toolbar',
+    'default_content',
+    'empty_front_page',
+    'field_group',
+    'file_entity',
+    'geolocation',
+    'geolocation_address',
+    'geolocation_google_maps',
+    'pathauto',
+    'themable_forms',
+    'twig_tweak',
+    'wpf',
+    'svg_image',
+  ]);
+
+  // Remove view taxonomy_term, we have new one in config
+  \Drupal::service('config.factory')->getEditable('views.view.taxonomy_term')->delete();
+
+  // Enable realestate_theme theme
+  \Drupal::service('theme_installer')->install(['realestate_theme']);
+
+  // Enable rental modules
+  \Drupal::service('module_installer')->install([
+    'rental',
+    'rental_config',
+    'rental_content',
+  ]);
+
+  // Make realestate_theme default
+  \Drupal::configFactory()
+  ->getEditable('system.theme')
+  ->set('default', 'realestate_theme')
+  ->save();
+}

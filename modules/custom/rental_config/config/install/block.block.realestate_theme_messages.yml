@@ -5,11 +5,11 @@ dependencies:
   module:
     - system
   theme:
-    - realestate
+    - realestate_theme
 _core:
   default_config_hash: TICBg4ZLbnwRPLMVReCkpoASwtrw_ucbLUFXhye3cOM
-id: realestate_messages
-theme: realestate
+id: realestate_theme_messages
+theme: realestate_theme
 region: content
 weight: -8
 provider: null
