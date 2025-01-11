@@ -1,0 +1,7 @@
+rental.content:
+  path: '/rental-front-page'
+  defaults:
+    _controller: '\Drupal\rental\Controller\RentalFrontPageController::content'
+    _title: ''
+  requirements:
+    _permission: 'access content'

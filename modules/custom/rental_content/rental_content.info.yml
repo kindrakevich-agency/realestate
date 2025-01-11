@@ -1,6 +1,6 @@
 name: 'Default content YAML for Real Estate'
 type: module
 description: 'Default content YAML for Real Estate'
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^10 || ^11
 dependencies:
   - default_content:default_content

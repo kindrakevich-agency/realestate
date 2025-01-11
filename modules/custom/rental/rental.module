@@ -2,6 +2,14 @@
 use \Drupal\views\ViewExecutable;
 use \Drupal\views\Plugin\views\query\QueryPluginBase;
 
+/**
+ * Implements hook_theme_suggestions_form_element().
+ */
+function rental_theme_suggestions_form_element(array $variables) {
+  $suggestions = ['form_element__type__' . $variables['element']['#type']];
+  return $suggestions;
+}
+
 function rental_mail($key, &$message, $params) {
    $options = array(
      'langcode' => $message['langcode'],

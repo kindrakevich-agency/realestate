@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for Rental.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function rental_install() {
+  Drupal::configFactory()->getEditable('system.site')->set('page.front', '/rental-front-page')->save();
+}

@@ -1,7 +1,7 @@
 # Realestate profile for Drupal
 
 ## What is Realestate?
-Realestate is a Drupal 10 profile designed to build real estate websites. It's based on the latest frontend technologies, including Bootstrap 5. The maintainer of Realestate is [Vitaly Kindrakevich](https://kindrakevich.com).
+Realestate is a Drupal 10/11 profile designed to build real estate websites. It's based on the latest frontend technologies, including Bootstrap 5. The maintainer of Realestate is [Vitaly Kindrakevich](https://kindrakevich.com).
 
 * **Demo**: [dist.kindrakevich.com](https://dist.kindrakevich.com)
 * **Composer template**: [github.com/kindrakevich-agency/realestate](https://github.com/kindrakevich-agency/realestate)
@@ -16,15 +16,12 @@ This repository contains a Drupal profile. When you put it in the `/profiles/con
 "require": {
     "drupal/address": "^2.0",
     "drupal/admin_toolbar": "^3.4",
-    "drupal/core": "^10.0",
     "drupal/default_content": "^2.0@alpha",
-    "drupal/empty_front_page": "^1.1",
     "drupal/field_group": "^3.4",
-    "drupal/geolocation": "^3.12",
+    "drupal/geolocation": "^3.14",
     "drupal/hal": "^2.0",
-    "drupal/pathauto": "^1.12",
+    "drupal/pathauto": "^1.13",
     "drupal/svg_image": "^3.0",
-    "drupal/themable_forms": "^1.0",
     "drupal/twig_tweak": "^3.2",
     "drupal/wpf": "^1.1"
 }

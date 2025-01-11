@@ -5,7 +5,6 @@
  * realestate_theme theme file.
  */
 
-
 /**
  * Callback to convert attributes class which is string to array.
  *

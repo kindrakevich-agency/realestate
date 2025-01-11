@@ -1,7 +1,7 @@
 name: Realestate
 type: theme
 description: 'Simple theme for real estate sites based on Bootstrap 5.'
-core_version_requirement: '^9.4 || ^10'
+core_version_requirement: ^10 || ^11
 base theme: false
 libraries:
   - realestate_theme/global
